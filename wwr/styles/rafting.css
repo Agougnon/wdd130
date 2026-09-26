@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #0b6623;
+    --secondary-color: #03396c;
+    --accent1-color: #f4f4f4;
+    --accent2-color: #333333;
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--accent2-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0b6623;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.history {
+    margin-bottom: 40px;
+}
+
+.history h2 {
+    color: #0b6623;
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+}
+
+footer, .footer {
+    background-color: #0b6623;
+    color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.socialmedia, .sociallinks {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.socialmedia a img, .sociallinks a img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+}
